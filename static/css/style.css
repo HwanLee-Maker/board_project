@@ -1,0 +1,169 @@
+/* =========================
+   기본 전체 스타일
+========================= */
+body {
+    margin: 0;
+    font-family: "Noto Sans KR", Arial, sans-serif;
+    background: #f4f7fb;
+    color: #333;
+}
+
+/* =========================
+   컨테이너
+========================= */
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+/* =========================
+   헤더 (상단 바)
+========================= */
+.header {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    padding: 15px;
+    color: white;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+/* =========================
+   버튼 스타일
+========================= */
+button, .btn {
+    background: #4facfe;
+    border: none;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+
+button:hover, .btn:hover {
+    background: #2196f3;
+}
+
+/* 삭제 버튼 */
+.btn-danger {
+    background: #ff5c5c;
+}
+
+.btn-danger:hover {
+    background: #e53935;
+}
+
+/* 수정 버튼 */
+.btn-edit {
+    background: #ffa726;
+}
+
+.btn-edit:hover {
+    background: #fb8c00;
+}
+
+/* =========================
+   로그인 박스
+========================= */
+.login-box {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    max-width: 400px;
+    margin: 80px auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+/* =========================
+   게시글 카드
+========================= */
+.post {
+    background: white;
+    padding: 15px;
+    margin: 12px 0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.post-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.post-meta {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   버튼 그룹
+========================= */
+.post-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+/* =========================
+   작성 폼
+========================= */
+.write-box {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* =========================
+   반응형 (핸드폰)
+========================= */
+@media (max-width: 600px) {
+
+    .container {
+        width: 95%;
+        margin: 15px auto;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    button, .btn {
+        width: 100%;
+    }
+
+    .post-actions {
+        flex-direction: column;
+    }
+}
